@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Welcome to the Dystopian formation center</title>
+	</head>
+	<body>
+		<h1>Gestionnaires</h1>
+		<table>
+			<tr th:each="g : ${gestio}" >
+				<td th:text="${g.nom}">1</td>
+			</tr>
+		</table>
+	</body>
+</html>
