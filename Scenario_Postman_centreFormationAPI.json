@@ -1,0 +1,1034 @@
+{
+	"info": {
+		"_postman_id": "9d94ff96-59e9-49c8-9c7d-64c7ffb9f3ad",
+		"name": "centreFormationAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Statuts",
+			"item": [
+				{
+					"name": "localhost:8080/api/statuts/allStatut",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/statuts/allStatut",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"statuts",
+								"allStatut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/statuts/statut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"Étudiant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/statuts/statut",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"statuts",
+								"statut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/statuts/statut",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"Étudiants\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/statuts/statut/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"statuts",
+								"statut",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gestionnaires",
+			"item": [
+				{
+					"name": "localhost:8080/api/gestionnaires/allGestio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"nom\": \"Deyaert\",\r\n        \"prenom\": \"Jean-pascal\",\r\n        \"adresse\": \"Chaussée de la louvière\",\r\n        \"telephone\": \"0457812364\",\r\n        \"email\": \"julien@hotmail.com\",\r\n        \"codeId\": 2,\r\n        \"nationnalId\": \"02020202020\",\r\n        \"compte\": \"76411654\",\r\n        \"statutsModif\": [],\r\n        \"secretairesAjout\": [],\r\n        \"formateursAjout\": [],\r\n        \"formateursModif\": [],\r\n        \"formateursDelete\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/gestionnaires/allGestio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gestionnaires",
+								"allGestio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/gestionnaires/gestio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/gestionnaires/gestio",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gestionnaires",
+								"gestio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/gestionnaires/updateGestio/2",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"nom\": \"\",\r\n        \"prenom\": \"Jean\",\r\n        \"adresse\": \"Rue du ting\",\r\n        \"telephone\": \"00000\",\r\n        \"email\": \"ting@hotmail.com\",\r\n        \"codeId\": 4,\r\n        \"nationnalId\": \"05050505\",\r\n        \"compte\": \"77777777\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/gestionnaires/updateGestio/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gestionnaires",
+								"updateGestio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/gestionnaires/delGestio/2",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"nom\": \"\",\r\n        \"prenom\": \"Jean\",\r\n        \"adresse\": \"Rue du ting\",\r\n        \"telephone\": \"00000\",\r\n        \"email\": \"ting@hotmail.com\",\r\n        \"codeId\": 4,\r\n        \"nationnalId\": \"05050505\",\r\n        \"compte\": \"77777777\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/gestionnaires/delGestio/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gestionnaires",
+								"delGestio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Types",
+			"item": [
+				{
+					"name": "localhost:8080/api/types/allTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/types/allTypes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"types",
+								"allTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/types/type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\" : \"test delete\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/types/type",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"types",
+								"type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/types/updateType/4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"TEST PUT ID 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/types/updatelType/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"types",
+								"updatelType",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/types/delType/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"TEST PUT ID 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/types/delType/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"types",
+								"delType",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locaux",
+			"item": [
+				{
+					"name": "localhost:8080/api/locaux/allLocaux",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/locaux/allLocaux",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locaux",
+								"allLocaux"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/locaux/locaux",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"test 2\",\r\n    \"etage\": \"0\",\r\n    \"estPermanant\": \"1\",\r\n    \"idType\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/locaux/locaux",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locaux",
+								"locaux"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/locaux/locaux/4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"test update full\",\r\n    \"etage\": 4,\r\n    \"estPermanent\": true,\r\n    \"type\": {\r\n        \"idType\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/locaux/locaux/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locaux",
+								"locaux",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/locaux/locaux/4",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\": \"test update full\",\r\n    \"etage\": 4,\r\n    \"estPermanent\": true,\r\n    \"type\": {\r\n        \"idType\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/locaux/delLocaux/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"locaux",
+								"delLocaux",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Secretaires",
+			"item": [
+				{
+					"name": "localhost:8080/api/secretaires/allSecre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/secretaires/allSecre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"secretaires",
+								"allSecre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/secretaires/secretaire",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Droit\",\r\n    \"prenom\":\"Angle\",\r\n    \"adresse\":\"rue de l'angle, 57, Paris\",\r\n    \"telephone\":\"04718145\",\r\n    \"email\":\"angle@hotmail.fr\",\r\n    \"codeId\": 45,\r\n    \"nationnalId\":\"4987612158\",\r\n    \"compte\":\"77777777777\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/secretaires/secretaire",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"secretaires",
+								"secretaire"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/secretaires//updateSecre/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Droit\",\r\n    \"prenom\":\"Angle\",\r\n    \"adresse\":\"rue de l'angle, 84, Paris\",\r\n    \"telephone\":\"04718145\",\r\n    \"email\":\"angle@hotmail.fr\",\r\n    \"codeId\": 45,\r\n    \"nationnalId\":\"4987612158\",\r\n    \"compte\":\"7444444444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/secretaires//updateSecre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"secretaires",
+								"",
+								"updateSecre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Formateurs",
+			"item": [
+				{
+					"name": "localhost:8080/api/formateurs/allFormateurs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/formateurs/allFormateurs/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formateurs",
+								"allFormateurs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/formateurs/formateurs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Souffle\",\r\n    \"prenom\":\"Pouff\",\r\n    \"adresse\":\"rue de Hogwart, 71, London\",\r\n    \"telephone\":\"44441111222\",\r\n    \"email\":\"pouff@hotmail.uk\",\r\n    \"codeId\": 12,\r\n    \"nationnalId\":\"78641\",\r\n    \"compte\":\"12321354641\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/formateurs/formateurs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formateurs",
+								"formateurs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/formateurs/updateFormateurs/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Daigle\",\r\n    \"prenom\":\"Serre\",\r\n    \"adresse\":\"rue de Hogwart, 45, London\",\r\n    \"telephone\":\"7774444111\",\r\n    \"email\":\"ser@hotmail.uk\",\r\n    \"codeId\": 41,\r\n    \"nationnalId\":\"784651\",\r\n    \"compte\":\"96314\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/formateurs/updateFormateurs/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formateurs",
+								"updateFormateurs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Formations",
+			"item": [
+				{
+					"name": "localhost:8080/api/formations/allFormations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/formations/allFormations/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formations",
+								"allFormations",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/formations/formations",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"intitule\":\".NET\",\r\n    \"duree\": 5,\r\n    \"prixBase\": 1000,\r\n    \"maxInscription\": 12,\r\n    \"minEleve\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/formations/formations",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formations",
+								"formations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/formations/updateFormation/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"intitule\":\".NET\",\r\n    \"duree\": 5,\r\n    \"prixBase\": 1000,\r\n    \"maxInscription\": 12,\r\n    \"minEleve\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/formations/updateFormation/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formations",
+								"updateFormation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/formations/delFormation/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/formations/delFormation/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formations",
+								"delFormation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stagiaires",
+			"item": [
+				{
+					"name": "localhost:8080/api/stagiaires/allStagiaire",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/stagiaires/allStagiaire",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"stagiaires",
+								"allStagiaire"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/stagiaires/stagiaire",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Gtx\",\r\n    \"prenom\":\"Geforce\",\r\n    \"adresse\":\"rue de carte graphique, 4411, Bruxelles\",\r\n    \"telephone\":\"145138\",\r\n    \"email\":\"gtw@hotmail.fr\",\r\n    \"codeId\": 7741,\r\n    \"idStatut\": {\r\n        \"idStatut\": 3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/stagiaires/stagiaire",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"stagiaires",
+								"stagiaire"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/stagiaires/updatelStagiaire/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nom\":\"Gtx\",\r\n    \"prenom\":\"Geforce\",\r\n    \"adresse\":\"rue de carte graphique, 4411, Bruxelles\",\r\n    \"telephone\":\"145138\",\r\n    \"email\":\"gtx@hotmail.fr\",\r\n    \"codeId\": 7741\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/stagiaires/updatelStagiaire/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"stagiaires",
+								"updatelStagiaire",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/stagiaires/updateStagiaire/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/stagiaires/delStagiaire/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"stagiaires",
+								"delStagiaire",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sessions",
+			"item": [
+				{
+					"name": "localhost:8080/api/sessions/allSessions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/sessions/allSessions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sessions",
+								"allSessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/sessions/sessions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2021-02-08\",\r\n    \"endDate\": \"2021-02-12\",\r\n    \"idFormateur\": {\r\n        \"idFormateur\": 1\r\n    },\r\n    \"idLocal\": {\r\n        \"idLocal\": 3\r\n    },\r\n    \"idFormation\": {\r\n        \"idFormation\": 3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/sessions/sessions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sessions",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/sessions/updateSessions/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2021-02-15\",\r\n    \"endDate\": \"2021-02-19\",\r\n    \"idLocal\": {\r\n        \"idLocal\": 3\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/sessions/updateSessions/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sessions",
+								"updateSessions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscriptions",
+			"item": [
+				{
+					"name": "localhost:8080/api/inscriptions/allInscriptions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/inscriptions/allInscriptions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"inscriptions",
+								"allInscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/inscriptions/inscriptions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/inscriptions/inscriptions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"inscriptions",
+								"inscriptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/inscriptions/updateInscriptions/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/inscriptions/updateInscriptions/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"inscriptions",
+								"updateInscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/inscriptions/delInscriptions/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/inscriptions/delInscriptions/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"inscriptions",
+								"delInscriptions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
