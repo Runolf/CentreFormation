@@ -15,6 +15,7 @@ import org.springframework.lang.Nullable;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import lombok.Data;
@@ -53,6 +54,7 @@ public class Formations {
 	@JoinColumn(name="GestDelete")
 	private Gestionnaires GestDelete;
 	
+	@JsonIgnore
 	@OneToMany(mappedBy="idFormation")
 	private Set<Sessions> sessions;
 

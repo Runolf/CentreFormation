@@ -15,6 +15,7 @@ import org.springframework.lang.Nullable;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import lombok.Data;
@@ -43,6 +44,7 @@ public class Sessions {
 	@JoinColumn(name="IdLocal")
 	private Locaux idLocal;
 	
+	@JsonIgnore
 	@Nullable
 	@ManyToOne
 	@JoinColumn(name="IdFormation")
